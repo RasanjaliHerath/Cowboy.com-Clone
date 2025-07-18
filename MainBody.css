@@ -1,0 +1,187 @@
+.main-body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  align-items: center;
+ background-color:#f3ecdc;
+}
+
+
+/* Optionally reset headings margin if needed */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+
+.full-width-container {
+  width: 100vw;
+  min-height: 90vh;
+
+  
+}
+
+.full-width-container:first-child {
+  background-color: #f3ecdc;
+  align-content: center;
+  
+}
+
+.features-background {
+  background-color: white;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+   margin-left: 5%;
+  
+}
+
+.subtitle {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #999; /* ash color */
+  margin-bottom: 30px;
+  
+}
+
+.title {
+  font-size: 5rem; /* bigger font */
+  font-weight: 500;
+  color: #000; /* black color */
+  margin-bottom: 30px;
+  line-height: 1.1;
+  
+}
+
+.explore-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px; /* gap after GO DUTCH */
+  margin-bottom: 30px;
+}
+
+.nav-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #000;
+  margin-right: 15px;
+  
+}
+
+.nav-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fcfcfc;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #837979;
+  margin-right: 15px;
+}
+
+.test-ride-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.test-ride-link:visited {
+  color: #000;
+}
+
+.test-ride-link:hover .arrow {
+  margin-left: 8px;
+  transition: margin-left 0.3s;
+}
+
+.arrow {
+  margin-left: 4px;
+  transition: margin-left 0.3s;
+}
+
+.features-flex {
+  display: flex;
+ justify-content: flex-start; 
+
+}
+
+.feature-item {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.feature-subtitle {
+  font-size: 0.9rem;
+  color: #999; /* ash color */
+  display: block;
+  margin-bottom: 4px;
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  color: #000; /* black color */
+  font-weight: 600;
+}
+
+.feature-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #ccc; /* light ash color for vertical line */
+}
+
+
+@media (max-width: 768px) {
+  .full-width-container {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .feature-box {
+    padding: 50px;
+  }
+}
+
+
+.content-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.bike-image {
+  width: 80%;
+  min-height: 90vh;
+  object-fit: cover;
+}

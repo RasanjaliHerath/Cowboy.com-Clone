@@ -1,0 +1,133 @@
+.whycb-container {
+  padding: 2rem;
+  background: #222;
+  min-height: 100vh;
+}
+
+.whycb-header {
+  position:relative;
+  margin-top: 6rem;
+
+}
+
+.whycb-subtitle {
+  font-size: 1.5rem;
+  color: #aaa;
+  text-align: left;
+  margin-bottom: 0.3rem;
+}
+
+.whycb-title {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 6rem;
+}
+
+.whycb-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+   padding: 0;
+   margin-top: 2rem;
+   outline: none;
+}
+
+.arrow-btn:focus {
+  outline: none; /* Remove focus outline on click */
+  box-shadow: none; /* Prevent any default focus shadow */
+}
+
+.arrow-btn:hover {
+  background: none; /* no background on hover */
+}
+
+.arrow-btn svg {
+  font-size: 2rem;
+  
+}
+
+
+.whycb-slider {
+  display: flex;
+  gap: 1rem;
+
+  overflow: visible;
+}
+
+.whycb-card {
+  position: relative;
+  background: #111;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  flex: 1;
+  min-width: 150px;
+  min-height: 200px;
+  text-decoration: none;
+  
+}
+
+.whycb-card:hover {
+  transform: translateY(-5px);
+  background: #fff;
+}
+
+.whycb-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.whycb-card-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.whycb-card-desc {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.whycb-plus {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background: #fff;  /* white bg */
+  border-radius: 50%;
+  padding: 0.2rem;
+  transition: background 0.3s ease, transform 0.3s ease; /* smooth transition */
+}
+
+.plus-icon {
+  font-size: 1.8rem;
+  color: #000;  /* black icon on white bg */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* When hovering the plus directly */
+.whycb-plus:hover {
+  background: #bbb;  /* ash bg */
+}
+
+.whycb-plus:hover .plus-icon {
+  color: #fff;  /* white icon */
+  transform: rotate(90deg);  /* rotate icon */
+}
+
+/* OPTIONAL: If you want it to also react when hovering the whole card */
+.whycb-card:hover .whycb-plus {
+  background: #bbb;
+}
+
+.whycb-card:hover .plus-icon {
+  color: #fff;
+  transform: rotate(90deg);
+}

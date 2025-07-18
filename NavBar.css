@@ -1,0 +1,185 @@
+body {
+  padding-top: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f3ecdc;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+ 
+}
+
+.white-bg {
+  background-color: #fff !important;
+}
+
+.navbar-link-text {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-link-text::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  
+}
+
+a:hover .navbar-link-text::after {
+  width: 100%;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar-links a,
+.navbar-link-ebike {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 0.1rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1;
+}
+
+
+
+.navbar-links a:hover::after,
+.navbar-link-ebike:hover::after {
+  width: 100%;
+}
+
+.navbar-r-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  padding: 0.1rem 0;
+  margin-right: 10px;
+}
+
+.navbar-r-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 1px;
+  left: 0;
+  background-color: #000;
+ 
+}
+
+.navbar-r-link:hover::after {
+  width: 100%;
+}
+
+.navbar-r-link,
+.navbar-r-link:visited,
+.navbar-r-link:hover,
+.navbar-r-link:focus,
+.navbar-r-link:active {
+  color: #000 !important;
+}
+
+.nav-button {
+  padding: 1rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #000;
+  margin-right: 10px;
+}
+
+.nav-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fcfcfc;
+}
+
+.expand-icon {
+  transition: transform 0.3s ease;
+  font-size: 18px;
+}
+
+.expand-icon.rotated {
+  transform: rotate(180deg);
+}
+
+
+.shopping-bag-icon {
+  color: black;         /* This sets the stroke/outline color */
+  fill: none;           /* No fill inside the icon */
+}
+
+.navbar-icon {
+  text-decoration: none;
+}
+
+.navbar-icon:hover .shopping-bag-icon,
+.navbar-icon:focus .shopping-bag-icon,
+.navbar-icon:active .shopping-bag-icon {
+  color: black;         /* Keep outline black on hover/focus */
+}
+
+.bike-name {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.bike-name.ash {
+  color: #a0a0a0; /* ash color */
+}
+
+.bike-name-text.ash {
+  color: #b2b2b2; /* gray color */
+  transition: color 0.2s ease;
+}
