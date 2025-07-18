@@ -51,6 +51,7 @@ Check out the live demo 👉 [cowboyclone.netlify.app](https://cowboyclone.netli
 
 <img width="1366" height="644" alt="Screenshot (254)" src="https://github.com/user-attachments/assets/14dd0fc7-21d1-470b-8c29-3b328129f4a0" />
 
+<img width="1366" height="641" alt="Screenshot (255)" src="https://github.com/user-attachments/assets/530fc2df-f233-4fa4-ad22-f1a08b8595b5" />
 
 
 
